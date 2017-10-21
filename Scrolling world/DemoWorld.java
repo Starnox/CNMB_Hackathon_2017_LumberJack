@@ -389,11 +389,8 @@ public class DemoWorld extends ScrollWorld
         copac_45.setLocation(777,2);
         copac_45.setLocation(777,2);
         copac_45.setLocation(777,2);
-<<<<<<< HEAD
-        addObject(new Lumber(),400,350);
         Galeata galeata = new Galeata();
         addObject(galeata,289,556);
-=======
         copac_3 copac_36 = new copac_3();
         addObject(copac_36,390,197);
         copac_4 copac_46 = new copac_4();
@@ -775,7 +772,6 @@ public class DemoWorld extends ScrollWorld
         addObject(copac_148,952,1415);
         copac_4 copac_447 = new copac_4();
         addObject(copac_447,1045,1405);
-        Galeata galeata = new Galeata();
         addObject(galeata,261,570);
         galeata.setLocation(259,567);
         galeata.setLocation(264,567);
@@ -793,6 +789,5 @@ public class DemoWorld extends ScrollWorld
         poteca_orizontala21.setLocation(642,1440);
 
         
->>>>>>> 7cc72c1e85b964d3fb104649a4455cc68429b729
     }
 }
