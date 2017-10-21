@@ -781,9 +781,10 @@ public class DemoWorld extends ScrollWorld
         poteca_verticala14.setLocation(944,1304);
         poteca_verticala13.setLocation(1210,1175);
         lum.timer=0;
-
+        lum.y1=750;
+        lum.y2=750;
         poteca_orizontala21.setLocation(642,1440);
-
+            
         Galeata galeata = new Galeata();
         addObject(galeata,299,574);
         galeata.setLocation(299,556);
