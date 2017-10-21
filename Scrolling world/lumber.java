@@ -1,6 +1,6 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
-public class Lumber extends ScrollActor
+public class lumber extends ScrollActor
 {
     String key;
     int anim=4;
