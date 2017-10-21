@@ -127,4 +127,7 @@ public class lumber extends ScrollActor
          if(getOneIntersectingObject(vertical.class)!=null||getOneIntersectingObject(orizontal.class)==null)
         getWorld().moveCamera(-5);
     }
+    
+    int child()
+    {
 }
