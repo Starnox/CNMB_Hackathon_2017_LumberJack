@@ -36,5 +36,7 @@ public class DemoWorld extends ScrollWorld
         copac_3.setLocation(173,133);
         copilul1 copilul1 = new copilul1();
         addObject(copilul1,654,417);
+        Galeata galeata = new Galeata();
+        addObject(galeata,209,567);
     }
 }
