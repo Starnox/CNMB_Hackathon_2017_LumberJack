@@ -2,18 +2,29 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 import java.util.List;
 public class Lumber extends ScrollActor
 {
-    String key;
-    int anim=4;
-    int animCycle=7;
-    int lastKey;
-    int timerMini=0;
-    int greseli,corecte;
-    String cheie;
+    private String key;
+    private String cheie;
+    
+    private int anim=4;
+    private int animCycle=7;
+    private int lastKey;
+    private int timerMini=0;
+    private int greseli,corecte;
+    
+    private boolean galeataPressed = false;
+    private boolean rockPressed = false;
+    
     
     public void act() 
     {
         key=Greenfoot.getKey();
         keys();
+        checkMouse();
+        if(galeataPressed && rockPressed){
+            
+        }
+        
+        
     }
     
     void keys()
@@ -270,5 +281,33 @@ public class Lumber extends ScrollActor
         }
         return 0;
     }
-
+    
+    public void checkMouse()
+    {
+        MouseInfo mouse = Greenfoot.getMouseInfo();
+        if(mouse!=null){
+            if(mouse.getButton() == 1 && Greenfoot.mouseClicked(null))
+            {
+                Actor actor = mouse.getActor();
+                if(actor instanceof Galeata){
+                galeataPressed = true;
+                actor.setImage("galeata-2.png");
+            }
+            if(getObjectsInRange(10, Rock.class) != null){
+            if(actor instanceof Rock)
+            {
+                rockPressed = true;
+            }
+        }
+            if(galeataPressed && rockPressed && actor instanceof Rock)
+            {
+                getWorld().removeObject(actor);
+                galeataPressed = false;
+                rockPressed = false;
+            }
+            }
+            
+        }
+    }
 }
+
