@@ -289,15 +289,17 @@ public class Lumber extends ScrollActor
                 Actor actor = mouse.getActor();
                 if(actor instanceof Galeata){
                 galeataPressed = true;
+                actor.setImage("galeata-2.png");
             }
+            if(getObjectsInRange(10, Rock.class) != null){
             if(actor instanceof Rock)
             {
                 rockPressed = true;
             }
+        }
             if(galeataPressed && rockPressed && actor instanceof Rock)
             {
                 getWorld().removeObject(actor);
-                actor.setImage("galeata-2.png");
                 galeataPressed = false;
                 rockPressed = false;
             }

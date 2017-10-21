@@ -1,5 +1,5 @@
 #Greenfoot properties
-#Sat Oct 21 16:59:58 EEST 2017
+#Sat Oct 21 17:05:09 EEST 2017
 target16.name=st
 target2.name=Copaci
 class.ScrollWorld.superclass=greenfoot.World
@@ -93,7 +93,7 @@ class.DemoWorld.superclass=ScrollWorld
 target7.typeParameters=
 target8.height=50
 target25.showInterface=false
-mainWindow.y=-8
+mainWindow.y=0
 mainWindow.x=-8
 target3.showInterface=false
 target12.showInterface=false
