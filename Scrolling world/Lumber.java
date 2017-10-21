@@ -27,7 +27,12 @@ public class Lumber extends ScrollActor
         }
         timer++;
         if(spawn==0&&timer%500==0)
+        {
+        int y=Greenfoot.getRandomNumber(1);
+        if(y==0)
         copii();
+        else foc();
+        }
     }
     
     void keys()
@@ -376,6 +381,24 @@ public class Lumber extends ScrollActor
             getWorld().addObject(new copilul2(),145,292);
             getWorld().addObject(new copilul3(),184,316);
         }
+        spawn=1;
+    }
+    void foc()
+    {
+         int x=Greenfoot.getRandomNumber(4);
+        if(x==0)
+            getWorld().addObject(new Fire(),98,320);
+        if(x==1)
+        getWorld().addObject(new Fire(),811,851);
+        if(x==2)
+            getWorld().addObject(new Fire(),98,320);
+        if(x==3)
+            getWorld().addObject(new Fire(),98,320);
+            if(x==4)
+            getWorld().addObject(new Fire(),98,320);
+            if(x==5)
+            getWorld().addObject(new Fire(),98,320);
+            
         spawn=1;
     }
 }
