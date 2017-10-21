@@ -18,10 +18,15 @@ public class Lumber extends ScrollActor
     private boolean galeataPressed = false;
     private boolean firePressed = false;
     private boolean canPressBucket = true;
+<<<<<<< HEAD
     
     
     
     
+=======
+    arrow sageata= new arrow();
+    public static int y1=750,y2=750;
+>>>>>>> 3bf68bf43b3a90ebd7146b1ef7698a4e12efb8ba
     public void act() 
     {
 
@@ -36,7 +41,7 @@ public class Lumber extends ScrollActor
         if(y==0)
         copii();
 
-        else foc();
+        //else foc();
         }
     }
     
@@ -364,24 +369,32 @@ public class Lumber extends ScrollActor
         int x=Greenfoot.getRandomNumber(4);
         if(x==0)
         {
+           y1=100;
+           y2=300;
             getWorld().addObject(new copilul1(),98,320);
             getWorld().addObject(new copilul2(),145,292);
             getWorld().addObject(new copilul3(),184,316);
         }
         if(x==1)
         {
+             y1=800;
+           y2=850;
         getWorld().addObject(new copilul1(),811,851);
         getWorld().addObject(new copilul2(),920,852);
         getWorld().addObject(new copilul3(),871,851);
         }
         if(x==3)
         {
+             y1=100;
+           y2=300;
             getWorld().addObject(new copilul1(),98,320);
             getWorld().addObject(new copilul2(),145,292);
             getWorld().addObject(new copilul3(),184,316);
         }
         if(x==4)
         {
+             y1=100;
+           y2=300;
             getWorld().addObject(new copilul1(),98,320);
             getWorld().addObject(new copilul2(),145,292);
             getWorld().addObject(new copilul3(),184,316);
@@ -390,6 +403,7 @@ public class Lumber extends ScrollActor
     }
     void foc()
     {
+<<<<<<< HEAD
             int x=Greenfoot.getRandomNumber(4);
             if(x==0)
                 getWorld().addObject(new Fire(),484,88);
@@ -402,6 +416,49 @@ public class Lumber extends ScrollActor
             if(x==4)
                 getWorld().addObject(new Fire(),464,527);
             countTimeFire();
+=======
+         int x=Greenfoot.getRandomNumber(4);
+        if(x==0)
+            {
+                y1=1;
+                y2=1;
+                getWorld().addObject(new Fire(),98,320);
+            }
+        if(x==1)
+        {
+                y1=1;
+                y2=1;
+            
+        getWorld().addObject(new Fire(),811,851);
+    }
+        if(x==2)
+        {
+                y1=1;
+                y2=1;
+            
+            getWorld().addObject(new Fire(),98,320);
+        }
+        if(x==3)
+        {
+                y1=1;
+                y2=1;
+            
+            getWorld().addObject(new Fire(),98,320);
+        }
+            if(x==4)
+            {
+                y1=1;
+                y2=1;
+            
+            getWorld().addObject(new Fire(),98,320);
+        }
+            if(x==5)
+            {
+                y1=1;
+                y2=1;
+            getWorld().addObject(new Fire(),98,320);
+        }
+>>>>>>> 3bf68bf43b3a90ebd7146b1ef7698a4e12efb8ba
             
         spawn=1;
     }
