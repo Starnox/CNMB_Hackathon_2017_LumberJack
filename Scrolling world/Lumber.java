@@ -4,13 +4,13 @@ public class Lumber extends ScrollActor
 {
     private String key;
     private String cheie;
-    
+    public static int timer;
     private int anim=4;
     private int animCycle=7;
     private int lastKey;
     private int timerMini=0;
     private int greseli,corecte;
-    
+    int spawn=0;
     private boolean galeataPressed = false;
     private boolean rockPressed = false;
     
@@ -23,8 +23,9 @@ public class Lumber extends ScrollActor
         if(galeataPressed && rockPressed){
             
         }
-        
-        
+        timer++;
+        if(spawn==0&&timer%500==0)
+        copii();
     }
     
     void keys()
@@ -95,8 +96,8 @@ public class Lumber extends ScrollActor
                    greseli=0;
                    timerMini=0;
                    remove_sageata();
-                   getWorld().setCameraLocation(400,300);
-                   getWorld().addObject(new Lumber(),400,300);
+                   getWorld().setCameraLocation(400,350);
+                   getWorld().addObject(new Lumber(),400,350);
                    getWorld().removeObject(this);
                    return;
                 }
@@ -115,11 +116,12 @@ public class Lumber extends ScrollActor
                    greseli=0;
                    timerMini=0;
                    remove_sageata();
-                   List Objects=getObjectsInRange(150,copil.class);
+                   List Objects=getObjectsInRange(500,copil.class);
                     for(Object obj : Objects)
                     {
                        getWorld().removeObject((Actor)obj);
                     }
+                    spawn=0;
 
             }
           else 
@@ -307,21 +309,48 @@ public class Lumber extends ScrollActor
                 galeataPressed = true;
                 actor.setImage("galeata-2.png");
             }
-            if(getObjectsInRange(10, Rock.class) != null){
-            if(actor instanceof Rock)
+            if(actor instanceof Fire)
             {
                 rockPressed = true;
             }
-        }
-            if(galeataPressed && rockPressed && actor instanceof Rock)
+            if(galeataPressed && rockPressed && actor instanceof Fire)
             {
                 getWorld().removeObject(actor);
                 galeataPressed = false;
                 rockPressed = false;
             }
             }
-            
         }
+            
+      }
+    void copii()
+    {
+        int x=Greenfoot.getRandomNumber(4);
+        if(x==0)
+        {
+            getWorld().addObject(new copilul1(),98,320);
+            getWorld().addObject(new copilul2(),145,292);
+            getWorld().addObject(new copilul3(),184,316);
+        }
+        if(x==1)
+        {
+            getWorld().addObject(new copilul1(),98,320);
+            getWorld().addObject(new copilul2(),145,292);
+            getWorld().addObject(new copilul3(),184,316);
+        }
+        if(x==3)
+        {
+            getWorld().addObject(new copilul1(),98,320);
+            getWorld().addObject(new copilul2(),145,292);
+            getWorld().addObject(new copilul3(),184,316);
+        }
+        if(x==4)
+        {
+            getWorld().addObject(new copilul1(),98,320);
+            getWorld().addObject(new copilul2(),145,292);
+            getWorld().addObject(new copilul3(),184,316);
+        }
+        spawn=1;
     }
 }
 
