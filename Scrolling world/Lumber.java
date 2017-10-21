@@ -58,6 +58,12 @@ public class Lumber extends ScrollActor
             animate_up();
             lastKey=3;
         }
+        else
+        if(key!=null && key.equals("space"))
+           {
+               getWorld().setCameraLocation(getX(),getY());
+               getWorld().setCameraLocation(getX(),getY());
+            }
         else 
         {
             anim=4;
@@ -210,9 +216,11 @@ public class Lumber extends ScrollActor
                 anim=4;
             }
          if(getOneObjectAtOffset(-5,0,Poteci.class)!=null)
+       {
         setLocation(getX()-5,getY());
         if(getOneIntersectingObject(orizontal.class)!=null||getOneIntersectingObject(vertical.class)==null)
         getWorld().moveCamera(-5);
+    }
     }
     
     
@@ -230,9 +238,11 @@ public class Lumber extends ScrollActor
                 anim=4;
             }
         if(getOneObjectAtOffset(5,0,Poteci.class)!=null)
+        {
         setLocation(getX()+5,getY());
         if(getOneIntersectingObject(orizontal.class)!=null||getOneIntersectingObject(vertical.class)==null)
         getWorld().moveCamera(-5);
+       }
     }
     
      void animate_up()
@@ -248,9 +258,11 @@ public class Lumber extends ScrollActor
                 anim=4;
             }
          if(getOneObjectAtOffset(0,-5,Poteci.class)!=null)
-        setLocation(getX(),getY()-5);
+        {
+            setLocation(getX(),getY()-5);
         if(getOneIntersectingObject(vertical.class)!=null||getOneIntersectingObject(orizontal.class)==null)
         getWorld().moveCamera(-5);
+    }
     }
     
     void animate_down()
@@ -266,9 +278,11 @@ public class Lumber extends ScrollActor
                 anim=4;
             }
          if(getOneObjectAtOffset(0,5,Poteci.class)!=null)
-        setLocation(getX(),getY()+5);
+       {
+           setLocation(getX(),getY()+5);
         if(getOneIntersectingObject(vertical.class)!=null||getOneIntersectingObject(orizontal.class)==null)
         getWorld().moveCamera(-5);
+    }
     }
     
 

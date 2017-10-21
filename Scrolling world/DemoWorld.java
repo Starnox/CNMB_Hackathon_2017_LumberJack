@@ -5,7 +5,7 @@ public class DemoWorld extends ScrollWorld
 {
     public DemoWorld()
     {
-        super(1500, 1500, 1, 1500, 1500);
+        super(800, 600, 1, 1500, 1500);
 
         prepare();
     }
@@ -387,6 +387,21 @@ public class DemoWorld extends ScrollWorld
         copac_45.setLocation(777,2);
         copac_45.setLocation(777,2);
         copac_45.setLocation(777,2);
-                addObject(new Lumber(),400,350);
+        addObject(new Lumber(),400,350);
+        Galeata galeata = new Galeata();
+        addObject(galeata,261,570);
+        galeata.setLocation(259,567);
+        galeata.setLocation(264,567);
+        removeObject(poteca_verticala18);
+        removeObject(poteca_orizontala6);
+        removeObject(poteca_verticala3);
+        poteca_verticala2.setLocation(1320,374);
+        poteca_verticala2.setLocation(1317,374);
+        removeObject(poteca_orizontala22);
+        poteca_orizontala19.setLocation(1078,1240);
+        poteca_verticala14.setLocation(944,1304);
+        poteca_verticala13.setLocation(1210,1175);
+       
+        poteca_orizontala21.setLocation(642,1440);
     }
 }
