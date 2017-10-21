@@ -12,14 +12,12 @@ public class DemoWorld extends ScrollWorld
 
     private void prepare()
     {
-        addObject(new Lumber(),400,300);
+
         addObject(new orizontal(),750,150);
         addObject(new vertical(),200,750);
         addObject(new orizontal(),750,1350);
         addObject(new vertical(),1300,750);
 
-        copilul1 copilul1 = new copilul1();
-        addObject(copilul1,654,417);
         Poteca_Orizontala poteca_orizontala = new Poteca_Orizontala();
         addObject(poteca_orizontala,321,376);
         Poteca_Orizontala poteca_orizontala2 = new Poteca_Orizontala();
@@ -28,7 +26,6 @@ public class DemoWorld extends ScrollWorld
         Poteca_Orizontala poteca_orizontala3 = new Poteca_Orizontala();
         addObject(poteca_orizontala3,728,382);
         poteca_orizontala3.setLocation(721,375);
-        copilul1.setLocation(651,435);
         Poteca_Verticala poteca_verticala = new Poteca_Verticala();
         addObject(poteca_verticala,862,449);
         poteca_verticala.setLocation(854,440);
@@ -159,5 +156,13 @@ public class DemoWorld extends ScrollWorld
         Poteca_Verticala poteca_verticala19 = new Poteca_Verticala();
         addObject(poteca_verticala19,1145,571);
         poteca_verticala19.setLocation(1142,573);
+        addObject(new Lumber(),400,300);
+        fantana fantana = new fantana();
+        addObject(fantana,857,977);
+        fantana.setLocation(1319,1223);
+        fantana.setLocation(1338,1230);
+        fantana fantana2 = new fantana();
+        addObject(fantana2,335,647);
+        fantana2.setLocation(312,636);
     }
 }
