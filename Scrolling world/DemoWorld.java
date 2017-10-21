@@ -5,8 +5,8 @@ public class DemoWorld extends ScrollWorld
 {
     public DemoWorld()
     {
-        super(1500, 1500, 1, 1500, 1500);
-
+        super(800, 600, 1, 1500, 1500);
+          
         prepare();
     }
 
@@ -389,7 +389,7 @@ public class DemoWorld extends ScrollWorld
         copac_45.setLocation(777,2);
         copac_45.setLocation(777,2);
         copac_45.setLocation(777,2);
-       
+
         copac_3 copac_36 = new copac_3();
         addObject(copac_36,390,197);
         copac_4 copac_46 = new copac_4();
@@ -781,9 +781,11 @@ public class DemoWorld extends ScrollWorld
         poteca_verticala14.setLocation(944,1304);
         poteca_verticala13.setLocation(1210,1175);
         lum.timer=0;
-        
+
         poteca_orizontala21.setLocation(642,1440);
 
-        
+        Galeata galeata = new Galeata();
+        addObject(galeata,299,574);
+        galeata.setLocation(299,556);
     }
 }
