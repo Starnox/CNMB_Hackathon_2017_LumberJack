@@ -21,30 +21,15 @@ public class Lumber extends ScrollActor
         key=Greenfoot.getKey();
         keys();
         checkMouse();
-<<<<<<< HEAD
-
-        
-        
-
-        if(galeataPressed && firePressed){
-=======
-        
-        if(galeataPressed && rockPressed){
->>>>>>> ea2fd1a9faf08d92c8021d9dc7d455377b9ae08e
-            
-        }
         timer++;
         if(spawn==0&&timer%500==0)
         {
         int y=Greenfoot.getRandomNumber(1);
         if(y==0)
         copii();
-<<<<<<< HEAD
 
-=======
         else foc();
         }
->>>>>>> ea2fd1a9faf08d92c8021d9dc7d455377b9ae08e
     }
     
     void keys()
@@ -78,16 +63,7 @@ public class Lumber extends ScrollActor
             animate_up();
             lastKey=3;
         }
-<<<<<<< HEAD
-
-       
-        
-
-        
-        else if(Greenfoot.isKeyDown("1"))
-=======
          else if(Greenfoot.isKeyDown("1"))
->>>>>>> ea2fd1a9faf08d92c8021d9dc7d455377b9ae08e
         {
             galeataPressed = true;
             
@@ -108,13 +84,9 @@ public class Lumber extends ScrollActor
             if(lastKey==1)
                 setImage("lumberjack_fata_idle.png");
         }
-<<<<<<< HEAD
         
             
-            
-=======
-           
->>>>>>> ea2fd1a9faf08d92c8021d9dc7d455377b9ae08e
+                    
           
         }
         
@@ -351,11 +323,6 @@ public class Lumber extends ScrollActor
                 galeataPressed = true;
                 actor.setImage("galeata-2.png");
             }
-<<<<<<< HEAD
-
-=======
->>>>>>> ea2fd1a9faf08d92c8021d9dc7d455377b9ae08e
-            
             else if(actor instanceof Fire)
             {
                 firePressed = true;
@@ -370,18 +337,15 @@ public class Lumber extends ScrollActor
         }
             
         
-<<<<<<< HEAD
          
             if(galeataPressed && firePressed && actor instanceof Fire)
 
-=======
-            if(galeataPressed && rockPressed && actor instanceof Rock)
+            if(galeataPressed && firePressed && actor instanceof Rock)
             if(actor instanceof Fire)
             {
-                rockPressed = true;
+                firePressed = true;
             }
-            if(galeataPressed && rockPressed && actor instanceof Fire)
->>>>>>> ea2fd1a9faf08d92c8021d9dc7d455377b9ae08e
+            if(galeataPressed && firePressed && actor instanceof Fire)
             {
                 getWorld().removeObject(actor);
                 galeataPressed = false;
