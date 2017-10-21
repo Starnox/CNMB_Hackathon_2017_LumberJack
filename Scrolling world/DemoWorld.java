@@ -5,7 +5,7 @@ public class DemoWorld extends ScrollWorld
 {
     public DemoWorld()
     {
-        super(2000, 2000, 1, 2000, 2000);
+        super(800, 600, 1, 2000, 2000);
 
         prepare();
     }
@@ -36,5 +36,7 @@ public class DemoWorld extends ScrollWorld
         copac_3.setLocation(155,133);
         copac_32.setLocation(60,203);
         copac_3.setLocation(173,133);
+        copilul1 copilul1 = new copilul1();
+        addObject(copilul1,654,417);
     }
 }
