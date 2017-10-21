@@ -198,6 +198,7 @@ public class Lumber extends ScrollActor
                 setImage("lumberjack_stanga_3.png");
                 anim=4;
             }
+         if(getOneObjectAtOffset(-5,0,Poteci.class)!=null)
         setLocation(getX()-5,getY());
         if(getOneIntersectingObject(orizontal.class)!=null||getOneIntersectingObject(vertical.class)==null)
         getWorld().moveCamera(-5);
@@ -217,7 +218,7 @@ public class Lumber extends ScrollActor
                 setImage("lumberjack_dreapta_3.png");
                 anim=4;
             }
-        
+        if(getOneObjectAtOffset(5,0,Poteci.class)!=null)
         setLocation(getX()+5,getY());
         if(getOneIntersectingObject(orizontal.class)!=null||getOneIntersectingObject(vertical.class)==null)
         getWorld().moveCamera(-5);
@@ -235,6 +236,7 @@ public class Lumber extends ScrollActor
                 setImage("lumberjack_fata_3.png");
                 anim=4;
             }
+         if(getOneObjectAtOffset(0,-5,Poteci.class)!=null)
         setLocation(getX(),getY()-5);
         if(getOneIntersectingObject(vertical.class)!=null||getOneIntersectingObject(orizontal.class)==null)
         getWorld().moveCamera(-5);
@@ -252,7 +254,7 @@ public class Lumber extends ScrollActor
                 setImage("lumberjack_spate_3.png");
                 anim=4;
             }
-        
+         if(getOneObjectAtOffset(0,5,Poteci.class)!=null)
         setLocation(getX(),getY()+5);
         if(getOneIntersectingObject(vertical.class)!=null||getOneIntersectingObject(orizontal.class)==null)
         getWorld().moveCamera(-5);

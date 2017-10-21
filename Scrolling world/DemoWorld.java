@@ -156,7 +156,6 @@ public class DemoWorld extends ScrollWorld
         Poteca_Verticala poteca_verticala19 = new Poteca_Verticala();
         addObject(poteca_verticala19,1145,571);
         poteca_verticala19.setLocation(1142,573);
-        addObject(new Lumber(),400,300);
         fantana fantana = new fantana();
         addObject(fantana,857,977);
         fantana.setLocation(1319,1223);
@@ -388,5 +387,6 @@ public class DemoWorld extends ScrollWorld
         copac_45.setLocation(777,2);
         copac_45.setLocation(777,2);
         copac_45.setLocation(777,2);
+                addObject(new Lumber(),400,350);
     }
 }
