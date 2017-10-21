@@ -1,6 +1,6 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
-public class lumber extends ScrollActor
+public class Lumber extends ScrollActor
 {
     String key;
     int anim=4;
@@ -45,13 +45,13 @@ public class lumber extends ScrollActor
         {
             anim=4;
             if(lastKey==4)
-                setImage("idles.png");
+                setImage("lumberjack_stanga_idle.png");
             if(lastKey==3)
-                setImage("idle.png");
+                setImage("lumberjack_spate_idle.png");
             if(lastKey==2)
-                setImage("idles.png");
+                setImage("lumberjack_dreapta_idle.png");
             if(lastKey==1)
-                setImage("idle.png");
+                setImage("lumberjack_fata_idle.png");
         }
         
     }
@@ -60,12 +60,12 @@ public class lumber extends ScrollActor
     {
         anim++;
         if(anim==animCycle)
-            setImage("merss1.png");
+            setImage("lumberjack_stanga_1.png");
         if(anim==2*animCycle)
-            setImage("merss2.png");
+            setImage("lumberjack_stanga_2.png");
         if(anim==3*animCycle)
             {
-                setImage("merss3.png");
+                setImage("lumberjack_stanga_3.png");
                 anim=4;
             }
         setLocation(getX()-5,getY());
@@ -77,12 +77,12 @@ public class lumber extends ScrollActor
     {
         anim++;
         if(anim==animCycle)
-            setImage("mersf1.png");
+            setImage("lumberjack_spate_1.png");
         if(anim==2*animCycle)
-            setImage("mersf2.png");
+            setImage("lumberjack_spate_2.png");
         if(anim==3*animCycle)
             {
-                setImage("mersf3.png");
+                setImage("lumberjack_spate_3.png");
                 anim=4;
             }
          
@@ -95,12 +95,12 @@ public class lumber extends ScrollActor
     {
         anim++;
         if(anim==animCycle)
-            setImage("merss1.png");
+            setImage("lumberjack_dreapta_1.png");
         if(anim==2*animCycle)
-            setImage("merss2.png");
+            setImage("lumberjack_dreapta_2.png");
         if(anim==3*animCycle)
             {
-                setImage("merss3.png");
+                setImage("lumberjack_dreapta_3.png");
                 anim=4;
             }
         
@@ -113,12 +113,12 @@ public class lumber extends ScrollActor
     {
         anim++;
         if(anim==animCycle)
-            setImage("mersf1.png");
+            setImage("lumberjack_fata_1.png");
         if(anim==2*animCycle)
-            setImage("mersf2.png");
+            setImage("lumberjack_fata_2.png");
         if(anim==3*animCycle)
             {
-                setImage("mersf3.png");
+                setImage("lumberjack_fata_3.png");
                 anim=4;
             }
         setLocation(getX(),getY()-5);
