@@ -1,7 +1,11 @@
 #Greenfoot project file
 =\=\=\=\=\=\=
 <<<<<<<=HEAD
+<<<<<<< HEAD
 >>>>>>>=f2fd92cbeaefb36724746bd8f7e745ce6121f3b5
+=======
+>>>>>>>=7cc72c1e85b964d3fb104649a4455cc68429b729
+>>>>>>> ea2fd1a9faf08d92c8021d9dc7d455377b9ae08e
 class.Copac_1.image=copac_1.png
 class.Copac_1.superclass=Copaci
 class.Copaci.superclass=Obstacles
@@ -20,7 +24,10 @@ class.Poteca_Orizontala.superclass=Poteci
 class.Poteca_Verticala.image=poteca-verticala.png
 class.Poteca_Verticala.superclass=Poteci
 class.Poteci.superclass=ScrollActor
+<<<<<<< HEAD
 class.Rock.image=apple1.png
+=======
+>>>>>>> ea2fd1a9faf08d92c8021d9dc7d455377b9ae08e
 class.Rock.superclass=ScrollActor
 class.ScrollActor.superclass=greenfoot.Actor
 class.ScrollWorld.superclass=greenfoot.World
@@ -33,7 +40,13 @@ class.copac_4.superclass=Copaci
 class.copil.superclass=ScrollActor
 class.copilul1.image=copil1-1.png
 class.copilul1.superclass=copil
+<<<<<<< HEAD
 class.copilul2.superclass=copil
+=======
+class.copilul2.image=copil2-1.png
+class.copilul2.superclass=copil
+class.copilul3.image=copil3-1.png
+>>>>>>> ea2fd1a9faf08d92c8021d9dc7d455377b9ae08e
 class.copilul3.superclass=copil
 class.dr.image=dreapta.png
 class.dr.superclass=sageti
@@ -42,7 +55,11 @@ class.fantana.superclass=ScrollActor
 class.jos.image=jos.png
 class.jos.superclass=sageti
 class.obstacole.superclass=ScrollActor
+<<<<<<< HEAD
 class.orizontal.image=orizontal.png
+=======
+class.orizontal.image=test2.png
+>>>>>>> ea2fd1a9faf08d92c8021d9dc7d455377b9ae08e
 class.orizontal.superclass=ScrollActor
 class.sageti.superclass=ScrollActor
 class.st.image=stanga.png
@@ -57,7 +74,11 @@ class.tree3.image=copac_3.png
 class.tree3.superclass=obstacole
 class.tree4.image=copac_4.png
 class.tree4.superclass=obstacole
+<<<<<<< HEAD
 class.vertical.image=vertical.png
+=======
+class.vertical.image=test1.png
+>>>>>>> ea2fd1a9faf08d92c8021d9dc7d455377b9ae08e
 class.vertical.superclass=ScrollActor
 dependency1.from=ScrollActor
 dependency1.to=ScrollWorld
@@ -80,6 +101,7 @@ dependency14.type=UsesDependency
 dependency15.from=DemoWorld
 dependency15.to=Galeata
 dependency15.type=UsesDependency
+<<<<<<< HEAD
 dependency16.from=Lumber
 dependency16.to=st
 dependency16.type=UsesDependency
@@ -91,11 +113,25 @@ dependency18.to=sus
 dependency18.type=UsesDependency
 dependency19.from=Lumber
 dependency19.to=jos
+=======
+dependency16.from=DemoWorld
+dependency16.to=copilul2
+dependency16.type=UsesDependency
+dependency17.from=DemoWorld
+dependency17.to=copilul3
+dependency17.type=UsesDependency
+dependency18.from=Lumber
+dependency18.to=st
+dependency18.type=UsesDependency
+dependency19.from=Lumber
+dependency19.to=dr
+>>>>>>> ea2fd1a9faf08d92c8021d9dc7d455377b9ae08e
 dependency19.type=UsesDependency
 dependency2.from=ScrollWorld
 dependency2.to=ScrollActor
 dependency2.type=UsesDependency
 dependency20.from=Lumber
+<<<<<<< HEAD
 dependency20.to=sageti
 dependency20.type=UsesDependency
 dependency21.from=Lumber
@@ -124,16 +160,60 @@ dependency28.to=Fire
 dependency28.type=UsesDependency
 dependency29.from=Lumber
 dependency29.to=copilul1
+=======
+dependency20.to=sus
+dependency20.type=UsesDependency
+dependency21.from=Lumber
+dependency21.to=jos
+dependency21.type=UsesDependency
+dependency22.from=Lumber
+dependency22.to=sageti
+dependency22.type=UsesDependency
+dependency23.from=Lumber
+dependency23.to=orizontal
+dependency23.type=UsesDependency
+dependency24.from=Lumber
+dependency24.to=vertical
+dependency24.type=UsesDependency
+dependency25.from=Lumber
+dependency25.to=copil
+dependency25.type=UsesDependency
+dependency26.from=Lumber
+dependency26.to=Poteci
+dependency26.type=UsesDependency
+dependency27.from=Lumber
+dependency27.to=Galeata
+dependency27.type=UsesDependency
+dependency28.from=Lumber
+dependency28.to=Rock
+dependency28.type=UsesDependency
+dependency29.from=Lumber
+dependency29.to=Fire
+>>>>>>> ea2fd1a9faf08d92c8021d9dc7d455377b9ae08e
 dependency29.type=UsesDependency
 dependency3.from=DemoWorld
 dependency3.to=Rock
 dependency3.type=UsesDependency
 dependency30.from=Lumber
+<<<<<<< HEAD
 dependency30.to=copilul2
 dependency30.type=UsesDependency
 dependency31.from=Lumber
 dependency31.to=copilul3
 dependency31.type=UsesDependency
+=======
+dependency30.to=copilul1
+dependency30.type=UsesDependency
+dependency31.from=Lumber
+dependency31.to=copilul2
+dependency31.type=UsesDependency
+dependency32.from=Lumber
+dependency32.to=copilul3
+dependency32.type=UsesDependency
+dependency33.from=Lumber
+dependency33.to=fantana
+dependency33.type=UsesDependency
+>>>>>>> ea2fd1a9faf08d92c8021d9dc7d455377b9ae08e
 dependency4.from=DemoWorld
 dependency4.to=orizontal
 dependency4.type=UsesDependency
@@ -152,6 +232,7 @@ dependency8.type=UsesDependency
 dependency9.from=DemoWorld
 dependency9.to=Poteca_Orizontala
 dependency9.type=UsesDependency
+<<<<<<< HEAD
 editor.fx.0.height=739
 editor.fx.0.width=816
 editor.fx.0.x=275
@@ -162,6 +243,18 @@ mainWindow.x=-8
 mainWindow.y=0
 package.numDependencies=31
 package.numTargets=29
+=======
+editor.fx.0.height=744
+editor.fx.0.width=1382
+editor.fx.0.x=-8
+editor.fx.0.y=-8
+mainWindow.height=768
+mainWindow.width=1366
+mainWindow.x=-8
+mainWindow.y=-8
+package.numDependencies=33
+package.numTargets=28
+>>>>>>> ea2fd1a9faf08d92c8021d9dc7d455377b9ae08e
 project.charset=UTF-8
 publish.hasSource=true
 publish.locked=false
@@ -190,7 +283,11 @@ target1.width=80
 target1.x=0
 target1.y=0
 target10.height=50
+<<<<<<< HEAD
 target10.name=obstacole
+=======
+target10.name=orizontal
+>>>>>>> ea2fd1a9faf08d92c8021d9dc7d455377b9ae08e
 target10.naviview.expanded=false
 target10.showInterface=false
 target10.type=ClassTarget
@@ -199,7 +296,11 @@ target10.width=80
 target10.x=0
 target10.y=0
 target11.height=50
+<<<<<<< HEAD
 target11.name=orizontal
+=======
+target11.name=copac_2
+>>>>>>> ea2fd1a9faf08d92c8021d9dc7d455377b9ae08e
 target11.naviview.expanded=false
 target11.showInterface=false
 target11.type=ClassTarget
@@ -208,11 +309,16 @@ target11.width=80
 target11.x=0
 target11.y=0
 target12.height=50
+<<<<<<< HEAD
 target12.name=copac_2
+=======
+target12.name=Poteca_Orizontala
+>>>>>>> ea2fd1a9faf08d92c8021d9dc7d455377b9ae08e
 target12.naviview.expanded=false
 target12.showInterface=false
 target12.type=ClassTarget
 target12.typeParameters=
+<<<<<<< HEAD
 target12.width=80
 target12.x=0
 target12.y=0
@@ -236,6 +342,31 @@ target14.x=170
 target14.y=10
 target15.height=50
 target15.name=Poteci
+=======
+target12.width=120
+target12.x=0
+target12.y=0
+target13.height=50
+target13.name=ScrollActor
+target13.naviview.expanded=false
+target13.showInterface=true
+target13.type=AbstractTarget
+target13.typeParameters=
+target13.width=90
+target13.x=170
+target13.y=10
+target14.height=50
+target14.name=Poteci
+target14.naviview.expanded=false
+target14.showInterface=false
+target14.type=ClassTarget
+target14.typeParameters=
+target14.width=80
+target14.x=0
+target14.y=0
+target15.height=50
+target15.name=st
+>>>>>>> ea2fd1a9faf08d92c8021d9dc7d455377b9ae08e
 target15.naviview.expanded=false
 target15.showInterface=false
 target15.type=ClassTarget
@@ -244,25 +375,43 @@ target15.width=80
 target15.x=0
 target15.y=0
 target16.height=50
+<<<<<<< HEAD
 target16.name=st
+=======
+target16.name=Rock
+>>>>>>> ea2fd1a9faf08d92c8021d9dc7d455377b9ae08e
 target16.naviview.expanded=false
 target16.showInterface=false
 target16.type=ClassTarget
 target16.typeParameters=
 target16.width=80
+<<<<<<< HEAD
 target16.x=0
 target16.y=0
 target17.height=50
 target17.name=Rock
+=======
+target16.x=10
+target16.y=250
+target17.height=50
+target17.name=sageti
+>>>>>>> ea2fd1a9faf08d92c8021d9dc7d455377b9ae08e
 target17.naviview.expanded=false
 target17.showInterface=false
 target17.type=ClassTarget
 target17.typeParameters=
 target17.width=80
+<<<<<<< HEAD
 target17.x=10
 target17.y=250
 target18.height=50
 target18.name=sageti
+=======
+target17.x=0
+target17.y=0
+target18.height=50
+target18.name=copilul1
+>>>>>>> ea2fd1a9faf08d92c8021d9dc7d455377b9ae08e
 target18.naviview.expanded=false
 target18.showInterface=false
 target18.type=ClassTarget
@@ -271,7 +420,11 @@ target18.width=80
 target18.x=0
 target18.y=0
 target19.height=50
+<<<<<<< HEAD
 target19.name=copilul1
+=======
+target19.name=copilul3
+>>>>>>> ea2fd1a9faf08d92c8021d9dc7d455377b9ae08e
 target19.naviview.expanded=false
 target19.showInterface=false
 target19.type=ClassTarget
@@ -293,7 +446,11 @@ target2.width=80
 target2.x=0
 target2.y=0
 target20.height=50
+<<<<<<< HEAD
 target20.name=copilul3
+=======
+target20.name=copilul2
+>>>>>>> ea2fd1a9faf08d92c8021d9dc7d455377b9ae08e
 target20.naviview.expanded=false
 target20.showInterface=false
 target20.type=ClassTarget
@@ -302,7 +459,11 @@ target20.width=80
 target20.x=0
 target20.y=0
 target21.height=50
+<<<<<<< HEAD
 target21.name=copilul2
+=======
+target21.name=fantana
+>>>>>>> ea2fd1a9faf08d92c8021d9dc7d455377b9ae08e
 target21.naviview.expanded=false
 target21.showInterface=false
 target21.type=ClassTarget
@@ -311,6 +472,7 @@ target21.width=80
 target21.x=0
 target21.y=0
 target22.height=50
+<<<<<<< HEAD
 target22.name=fantana
 target22.naviview.expanded=false
 target22.showInterface=false
@@ -330,6 +492,27 @@ target23.x=70
 target23.y=10
 target24.height=50
 target24.name=Fire
+=======
+target22.name=ScrollWorld
+target22.naviview.expanded=false
+target22.showInterface=true
+target22.type=AbstractTarget
+target22.typeParameters=
+target22.width=90
+target22.x=70
+target22.y=10
+target23.height=50
+target23.name=Fire
+target23.naviview.expanded=false
+target23.showInterface=false
+target23.type=ClassTarget
+target23.typeParameters=
+target23.width=80
+target23.x=0
+target23.y=0
+target24.height=50
+target24.name=Galeata
+>>>>>>> ea2fd1a9faf08d92c8021d9dc7d455377b9ae08e
 target24.naviview.expanded=false
 target24.showInterface=false
 target24.type=ClassTarget
@@ -338,7 +521,11 @@ target24.width=80
 target24.x=0
 target24.y=0
 target25.height=50
+<<<<<<< HEAD
 target25.name=Galeata
+=======
+target25.name=Copac_1
+>>>>>>> ea2fd1a9faf08d92c8021d9dc7d455377b9ae08e
 target25.naviview.expanded=false
 target25.showInterface=false
 target25.type=ClassTarget
@@ -347,29 +534,50 @@ target25.width=80
 target25.x=0
 target25.y=0
 target26.height=50
+<<<<<<< HEAD
 target26.name=Copac_1
+=======
+target26.name=DemoWorld
+>>>>>>> ea2fd1a9faf08d92c8021d9dc7d455377b9ae08e
 target26.naviview.expanded=false
 target26.showInterface=false
 target26.type=ClassTarget
 target26.typeParameters=
+<<<<<<< HEAD
 target26.width=80
 target26.x=0
 target26.y=0
 target27.height=50
 target27.name=DemoWorld
+=======
+target26.width=90
+target26.x=0
+target26.y=0
+target27.height=50
+target27.name=Poteca_Verticala
+>>>>>>> ea2fd1a9faf08d92c8021d9dc7d455377b9ae08e
 target27.naviview.expanded=false
 target27.showInterface=false
 target27.type=ClassTarget
 target27.typeParameters=
+<<<<<<< HEAD
 target27.width=90
 target27.x=0
 target27.y=0
 target28.height=50
 target28.name=Poteca_Verticala
+=======
+target27.width=110
+target27.x=0
+target27.y=0
+target28.height=50
+target28.name=Lumber
+>>>>>>> ea2fd1a9faf08d92c8021d9dc7d455377b9ae08e
 target28.naviview.expanded=false
 target28.showInterface=false
 target28.type=ClassTarget
 target28.typeParameters=
+<<<<<<< HEAD
 target28.width=110
 target28.x=0
 target28.y=0
@@ -382,6 +590,11 @@ target29.typeParameters=
 target29.width=80
 target29.x=0
 target29.y=0
+=======
+target28.width=80
+target28.x=0
+target28.y=0
+>>>>>>> ea2fd1a9faf08d92c8021d9dc7d455377b9ae08e
 target3.editor.height=708
 target3.editor.width=745
 target3.editor.x=1125
