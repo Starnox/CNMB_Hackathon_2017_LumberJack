@@ -138,8 +138,8 @@ public class Lumber extends ScrollActor
                    corecte=0;
                    greseli=0;
                    timerMini=0;
-                   getWorld().setCameraLocation(400,300);
-                   getWorld().addObject(new Lumber(),400,300);
+                   getWorld().setCameraLocation(400,350);
+                   getWorld().addObject(new Lumber(),400,350);
                    getWorld().removeObject(this);
                    return;
                 }
@@ -334,9 +334,9 @@ public class Lumber extends ScrollActor
         }
         if(x==1)
         {
-            getWorld().addObject(new copilul1(),98,320);
-            getWorld().addObject(new copilul2(),145,292);
-            getWorld().addObject(new copilul3(),184,316);
+        getWorld().addObject(new copilul1(),811,851);
+        getWorld().addObject(new copilul2(),920,852);
+        getWorld().addObject(new copilul3(),871,851);
         }
         if(x==3)
         {
