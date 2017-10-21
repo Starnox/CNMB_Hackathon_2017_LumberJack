@@ -21,17 +21,13 @@ public class Lumber extends ScrollActor
         key=Greenfoot.getKey();
         keys();
         checkMouse();
-<<<<<<< HEAD
         
-        
-=======
         if(galeataPressed && rockPressed){
             
         }
         timer++;
         if(spawn==0&&timer%500==0)
         copii();
->>>>>>> 7cc72c1e85b964d3fb104649a4455cc68429b729
     }
     
     void keys()
@@ -65,17 +61,16 @@ public class Lumber extends ScrollActor
             animate_up();
             lastKey=3;
         }
-<<<<<<< HEAD
-        else if(Greenfoot.isKeyDown("a"))
-=======
-        else
-        if(key!=null && key.equals("space"))
-           {
-               getWorld().setCameraLocation(getX(),getY());
-               getWorld().setCameraLocation(getX(),getY());
-            }
+         else if(Greenfoot.isKeyDown("1"))
+        {
+            galeataPressed = true;
+            
+            if(!getWorld().getObjects(Galeata.class).isEmpty()){
+            Actor actor = getWorld().getObjects(Galeata.class).get(0);
+            canPressBucket = false;
+            actor.setImage("galeata-2.png");
+        }
         else 
->>>>>>> 7cc72c1e85b964d3fb104649a4455cc68429b729
         {
             anim=4;
             if(lastKey==4)
@@ -87,17 +82,7 @@ public class Lumber extends ScrollActor
             if(lastKey==1)
                 setImage("lumberjack_fata_idle.png");
         }
-        else if(Greenfoot.isKeyDown("1"))
-        {
-            galeataPressed = true;
-            
-            if(!getWorld().getObjects(Galeata.class).isEmpty()){
-            Actor actor = getWorld().getObjects(Galeata.class).get(0);
-            canPressBucket = false;
-            actor.setImage("galeata-2.png");
-        }
-            
-            
+           
           
         }
         
@@ -334,7 +319,6 @@ public class Lumber extends ScrollActor
                 galeataPressed = true;
                 actor.setImage("galeata-2.png");
             }
-<<<<<<< HEAD
             
             else if(actor instanceof Rock)
             {
@@ -351,13 +335,11 @@ public class Lumber extends ScrollActor
             
         
             if(galeataPressed && rockPressed && actor instanceof Rock)
-=======
             if(actor instanceof Fire)
             {
                 rockPressed = true;
             }
             if(galeataPressed && rockPressed && actor instanceof Fire)
->>>>>>> 7cc72c1e85b964d3fb104649a4455cc68429b729
             {
                 getWorld().removeObject(actor);
                 galeataPressed = false;
