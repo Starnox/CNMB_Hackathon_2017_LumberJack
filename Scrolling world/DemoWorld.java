@@ -19,5 +19,8 @@ public class DemoWorld extends ScrollWorld
         addObject(new vertical(),200,1000);
         addObject(new orizontal(),1000,1850);
         addObject(new vertical(),1800,1000);
+        copilul1 copilul1 = new copilul1();
+        addObject(copilul1,651,180);
+        copilul1.setLocation(782,581);
     }
 }
