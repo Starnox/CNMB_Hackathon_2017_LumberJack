@@ -4,27 +4,35 @@ public class Lumber extends ScrollActor
 {
     private String key;
     private String cheie;
+    
     public static int timer;
+    
     private int anim=4;
     private int animCycle=7;
     private int lastKey;
     private int timerMini=0;
     private int greseli,corecte;
-    int spawn=0;
+    private int spawn=0;
+    private int time = 1500;
+    
     private boolean galeataPressed = false;
     private boolean firePressed = false;
     private boolean canPressBucket = true;
     
     
+    
+    
     public void act() 
     {
+
+     
         key=Greenfoot.getKey();
         keys();
         checkMouse();
         timer++;
         if(spawn==0&&timer%500==0)
         {
-        int y=Greenfoot.getRandomNumber(1);
+        int y=Greenfoot.getRandomNumber(2);
         if(y==0)
         copii();
 
@@ -336,11 +344,6 @@ public class Lumber extends ScrollActor
             }
         }
             
-        
-         
-            if(galeataPressed && firePressed && actor instanceof Fire)
-
-            if(galeataPressed && firePressed && actor instanceof Rock)
             if(actor instanceof Fire)
             {
                 firePressed = true;
@@ -348,6 +351,7 @@ public class Lumber extends ScrollActor
             if(galeataPressed && firePressed && actor instanceof Fire)
             {
                 getWorld().removeObject(actor);
+                spawn = 0;
                 galeataPressed = false;
                 firePressed = false;
             }
@@ -386,21 +390,38 @@ public class Lumber extends ScrollActor
     }
     void foc()
     {
-         int x=Greenfoot.getRandomNumber(4);
-        if(x==0)
-            getWorld().addObject(new Fire(),98,320);
-        if(x==1)
-        getWorld().addObject(new Fire(),811,851);
-        if(x==2)
-            getWorld().addObject(new Fire(),98,320);
-        if(x==3)
-            getWorld().addObject(new Fire(),98,320);
+            int x=Greenfoot.getRandomNumber(4);
+            if(x==0)
+                getWorld().addObject(new Fire(),484,88);
+            if(x==1)
+                getWorld().addObject(new Fire(),693,258);
+            if(x==2)
+                getWorld().addObject(new Fire(),449,554);
+            if(x==3)
+                getWorld().addObject(new Fire(),101,282);
             if(x==4)
-            getWorld().addObject(new Fire(),98,320);
-            if(x==5)
-            getWorld().addObject(new Fire(),98,320);
+                getWorld().addObject(new Fire(),464,527);
+            countTimeFire();
             
         spawn=1;
+    }
+    
+    void countTimeFire()
+    {
+        time--;
+        showTime();
+        if(time / 55 <= 0)
+        {
+            getWorld().setCameraLocation(400,350);
+                   getWorld().addObject(new Lumber(),400,350);
+                   getWorld().removeObject(this);
+                   return;
+        }
+    }
+    
+    void showTime()
+    {
+        getWorld().showText("Time: " + time/55, 100, 100);
     }
 }
 
