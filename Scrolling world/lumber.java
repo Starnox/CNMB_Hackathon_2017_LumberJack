@@ -128,6 +128,4 @@ public class lumber extends ScrollActor
         getWorld().moveCamera(-5);
     }
     
-    int child()
-    {
 }
