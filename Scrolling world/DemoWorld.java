@@ -387,6 +387,8 @@ public class DemoWorld extends ScrollWorld
         copac_45.setLocation(777,2);
         copac_45.setLocation(777,2);
         copac_45.setLocation(777,2);
-                addObject(new Lumber(),400,350);
+        addObject(new Lumber(),400,350);
+        Galeata galeata = new Galeata();
+        addObject(galeata,289,556);
     }
 }

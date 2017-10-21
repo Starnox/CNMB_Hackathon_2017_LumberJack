@@ -13,6 +13,7 @@ public class Lumber extends ScrollActor
     
     private boolean galeataPressed = false;
     private boolean rockPressed = false;
+    private boolean canPressBucket = true;
     
     
     public void act() 
@@ -20,9 +21,6 @@ public class Lumber extends ScrollActor
         key=Greenfoot.getKey();
         keys();
         checkMouse();
-        if(galeataPressed && rockPressed){
-            
-        }
         
         
     }
@@ -58,7 +56,7 @@ public class Lumber extends ScrollActor
             animate_up();
             lastKey=3;
         }
-        else 
+        else if(Greenfoot.isKeyDown("a"))
         {
             anim=4;
             if(lastKey==4)
@@ -70,6 +68,20 @@ public class Lumber extends ScrollActor
             if(lastKey==1)
                 setImage("lumberjack_fata_idle.png");
         }
+        else if(Greenfoot.isKeyDown("1"))
+        {
+            galeataPressed = true;
+            
+            if(!getWorld().getObjects(Galeata.class).isEmpty()){
+            Actor actor = getWorld().getObjects(Galeata.class).get(0);
+            canPressBucket = false;
+            actor.setImage("galeata-2.png");
+        }
+            
+            
+          
+        }
+        
        }
        else
        {
@@ -289,16 +301,26 @@ public class Lumber extends ScrollActor
             if(mouse.getButton() == 1 && Greenfoot.mouseClicked(null))
             {
                 Actor actor = mouse.getActor();
-                if(actor instanceof Galeata){
+                if(actor instanceof Galeata && canPressBucket){
+                canPressBucket = false;
                 galeataPressed = true;
                 actor.setImage("galeata-2.png");
             }
-            if(getObjectsInRange(10, Rock.class) != null){
-            if(actor instanceof Rock)
+            
+            else if(actor instanceof Rock)
             {
                 rockPressed = true;
             }
+            else if(actor instanceof fantana)
+            {
+                canPressBucket = true;
+                if(!getWorld().getObjects(Galeata.class).isEmpty()){
+                    Actor bucket = getWorld().getObjects(Galeata.class).get(0);
+                    bucket.setImage("galeata-1.png");
+            }
         }
+            
+        
             if(galeataPressed && rockPressed && actor instanceof Rock)
             {
                 getWorld().removeObject(actor);
