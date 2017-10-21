@@ -69,7 +69,7 @@ public class Lumber extends ScrollActor
                 anim=4;
             }
         setLocation(getX()-5,getY());
-        if(getX()<=1600)
+       if(getX()>=400&&getX()<=1600)
         getWorld().moveCamera(-5);
     }
     
@@ -87,7 +87,7 @@ public class Lumber extends ScrollActor
             }
          
         setLocation(getX(),getY()+5);
-        if(getY()>=300)
+        if(getY()>=300&&getY()<=1700)
         getWorld().moveCamera(-5);
     }
     
@@ -105,7 +105,7 @@ public class Lumber extends ScrollActor
             }
         
         setLocation(getX()+5,getY());
-        if(getX()>=400)
+        if(getX()>=400&&getX()<=1600)
         getWorld().moveCamera(-5);
     }
     
@@ -122,7 +122,7 @@ public class Lumber extends ScrollActor
                 anim=4;
             }
         setLocation(getX(),getY()-5);
-        if(getY()<=1500)
+         if(getX()>=400&&getX()<=1600)
         getWorld().moveCamera(-5);
     }
 }
