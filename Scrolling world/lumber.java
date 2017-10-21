@@ -1,11 +1,14 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-
-public class lumber extends ScrollActor
+import java.util.List;
+public class Lumber extends ScrollActor
 {
     String key;
     int anim=4;
     int animCycle=7;
     int lastKey;
+    int timerMini=0;
+    int greseli,corecte;
+    String cheie;
     public void act() 
     {
         key=Greenfoot.getKey();
@@ -14,6 +17,8 @@ public class lumber extends ScrollActor
     
     void keys()
     {
+        if(eLangaCopil()==0)
+        {
         if(Greenfoot.isKeyDown("a"))
         {
            getWorld().setCameraDirection(0);
@@ -23,7 +28,7 @@ public class lumber extends ScrollActor
         else
         if(Greenfoot.isKeyDown("s"))
         {
-            getWorld().setCameraDirection(270);
+           getWorld().setCameraDirection(270);
             animate_down();
             lastKey=3;
         }
@@ -37,7 +42,7 @@ public class lumber extends ScrollActor
         else
         if(Greenfoot.isKeyDown("w"))
         {
-            getWorld().setCameraDirection(90);
+           getWorld().setCameraDirection(90);
             animate_up();
             lastKey=3;
         }
@@ -53,6 +58,54 @@ public class lumber extends ScrollActor
             if(lastKey==1)
                 setImage("lumberjack_fata_idle.png");
         }
+       }
+       else
+       {
+           timerMini++;
+           if(timerMini==1)
+               greseli=0;
+           if(timerMini%50==1)
+           {
+               int x=Greenfoot.getRandomNumber(3);
+               List Objects=getObjectsInRange(150,sageti.class);
+                    for(Object obj : Objects)
+                        {
+                            greseli++;
+                            getWorld().removeObject((Actor)obj);
+                        }
+               if(greseli==2)
+               {
+                   corecte=0;
+                   greseli=0;
+                   timerMini=0;
+                   getWorld().setCameraLocation(400,300);
+                   getWorld().addObject(new Lumber(),400,300);
+                   getWorld().removeObject(this);
+                   return;
+                }
+               if(x==1)
+               {
+                   getWorld().addObject(new st(),getWorld().getCameraX(),getWorld().getCameraY()-50);
+                   cheie="left";
+                }
+               if(x==2)
+               {
+                   getWorld().addObject(new dr(),getWorld().getCameraX(),getWorld().getCameraY()-50);
+                 cheie="right";
+                }
+               if(x==3)
+               {
+                   getWorld().addObject(new sus(),getWorld().getCameraX(),getWorld().getCameraY()-50);
+                 cheie="up";
+                }
+               if(x==0)
+               {
+                   getWorld().addObject(new jos(),getWorld().getCameraX(),getWorld().getCameraY()-50);
+                 cheie="down";
+                }
+            }
+       }
+       
         
     }
     
@@ -69,7 +122,7 @@ public class lumber extends ScrollActor
                 anim=4;
             }
         setLocation(getX()-5,getY());
-       if(getOneIntersectingObject(orizontal.class)!=null||getOneIntersectingObject(vertical.class)==null)
+        if(getOneIntersectingObject(orizontal.class)!=null||getOneIntersectingObject(vertical.class)==null)
         getWorld().moveCamera(-5);
     }
     
@@ -124,8 +177,20 @@ public class lumber extends ScrollActor
             }
         
         setLocation(getX(),getY()+5);
-         if(getOneIntersectingObject(vertical.class)!=null||getOneIntersectingObject(orizontal.class)==null)
+        if(getOneIntersectingObject(vertical.class)!=null||getOneIntersectingObject(orizontal.class)==null)
         getWorld().moveCamera(-5);
     }
     
+<<<<<<< HEAD
+=======
+    int eLangaCopil()
+    {
+        List Objects=getObjectsInRange(100,copil.class);
+        for(Object obj : Objects)
+        {
+            return 1;
+        }
+        return 0;
+    }
+>>>>>>> 5df0ca77d008f68e2099ee27316967a911d79c63
 }

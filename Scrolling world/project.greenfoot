@@ -1,22 +1,39 @@
 #Greenfoot properties
+<<<<<<< HEAD
 #Sat Oct 21 14:54:22 EEST 2017
 target2.width=80
 editor.fx.0.height=0
 target8.name=Obstacles
+=======
+#Sat Oct 21 14:42:20 EEST 2017
+target2.width=80
+editor.fx.0.height=744
+target8.name=sus
+>>>>>>> 5df0ca77d008f68e2099ee27316967a911d79c63
 target11.y=0
 target11.x=0
 target5.naviview.expanded=false
 class.DemoWorld.superclass=ScrollWorld
+<<<<<<< HEAD
+=======
+dependency12.type=UsesDependency
+>>>>>>> 5df0ca77d008f68e2099ee27316967a911d79c63
 target7.showInterface=false
 target1.type=ClassTarget
 mainWindow.height=744
 target2.editor.y=104
 target6.typeParameters=
 target2.editor.x=128
+<<<<<<< HEAD
 dependency9.to=ScrollWorld
 target1.height=50
 target17.height=50
 target13.name=Poteca_Orizontala
+=======
+dependency9.to=copil
+target1.height=50
+target13.name=DemoWorld
+>>>>>>> 5df0ca77d008f68e2099ee27316967a911d79c63
 target8.y=0
 target8.x=0
 class.ScrollActor.superclass=greenfoot.Actor
@@ -25,15 +42,24 @@ dependency2.type=UsesDependency
 target5.type=ClassTarget
 target6.y=0
 target6.x=0
+<<<<<<< HEAD
 target17.name=ScrollActor
 target1.showInterface=false
 class.copac_4.image=copac_4.png
 target4.y=0
 target4.x=0
+=======
+target1.showInterface=false
+class.st.image=stanga.png
+target4.y=0
+target4.x=0
+dependency10.from=Lumber
+>>>>>>> 5df0ca77d008f68e2099ee27316967a911d79c63
 dependency6.type=UsesDependency
 target9.type=ClassTarget
 target4.showInterface=false
 publish.title=Scrolling world
+<<<<<<< HEAD
 target2.y=250
 target14.height=50
 target2.x=10
@@ -45,10 +71,24 @@ target14.type=ClassTarget
 class.copac_2.image=copac_2.png
 class.Rock.image=rock.png
 class.copac_3.image=copac_3.png
+=======
+target2.y=0
+target14.height=50
+target2.x=0
+target10.type=ClassTarget
+target8.height=50
+dependency10.to=st
+dependency14.from=Lumber
+target3.naviview.expanded=false
+class.dr.superclass=sageti
+target14.type=ClassTarget
+class.Rock.image=apple1.png
+>>>>>>> 5df0ca77d008f68e2099ee27316967a911d79c63
 target11.height=50
 target10.typeParameters=
 target1.editor.height=777
 dependency4.from=DemoWorld
+<<<<<<< HEAD
 dependency5.to=orizontal
 class.Poteca_Orizontala.superclass=Poteci
 target4.editor.height=361
@@ -61,27 +101,56 @@ target1.name=Poteci
 target10.showInterface=false
 target7.editor.height=585
 dependency8.from=DemoWorld
+=======
+dependency5.to=vertical
+class.copilul1.superclass=copil
+target4.editor.height=361
+publish.longDesc=
+class.ScrollWorld.superclass=greenfoot.World
+class.DemoWorld.image=harta-1.jpg
+target1.name=copil
+target10.showInterface=false
+target7.editor.height=585
+dependency8.from=Lumber
+dependency15.to=ScrollWorld
+>>>>>>> 5df0ca77d008f68e2099ee27316967a911d79c63
 target3.editor.y=143
 target13.showInterface=false
 target3.editor.x=1125
 target4.typeParameters=
 target5.name=vertical
 world.lastInstantiated=DemoWorld
+<<<<<<< HEAD
 target16.showInterface=false
 publish.locked=false
 mainWindow.width=1378
+=======
+publish.locked=false
+mainWindow.width=1382
+>>>>>>> 5df0ca77d008f68e2099ee27316967a911d79c63
 readme.width=47
 class.tree3.superclass=obstacole
 target9.name=obstacole
 target5.height=50
 target8.naviview.expanded=false
+<<<<<<< HEAD
 target10.name=copac_2
+=======
+target10.name=copilul1
+dependency13.type=UsesDependency
+target14.naviview.expanded=false
+>>>>>>> 5df0ca77d008f68e2099ee27316967a911d79c63
 target7.editor.width=608
 target2.type=ClassTarget
 target15.typeParameters=
 target4.editor.y=148
+<<<<<<< HEAD
 target14.name=Copac_1
 dependency1.to=orizontal
+=======
+target14.name=Lumber
+dependency1.to=ScrollActor
+>>>>>>> 5df0ca77d008f68e2099ee27316967a911d79c63
 target4.editor.x=1306
 publish.tags=demo mouse scrolling library with-source 
 class.obstacole.superclass=ScrollActor
@@ -91,13 +160,21 @@ dependency3.type=UsesDependency
 target6.type=ClassTarget
 target2.typeParameters=
 target2.height=50
+<<<<<<< HEAD
 target9.typeParameters=
+=======
+dependency11.to=dr
+class.sus.image=up.png
+target9.typeParameters=
+dependency11.from=Lumber
+>>>>>>> 5df0ca77d008f68e2099ee27316967a911d79c63
 dependency7.type=UsesDependency
 target1.naviview.expanded=false
 publish.updateDesc=Fixed another bug in ScrollActor
 target11.type=ClassTarget
 version=3.0.0
 target5.editor.width=489
+<<<<<<< HEAD
 editor.fx.0.y=0
 class.Obstacles.superclass=ScrollActor
 editor.fx.0.x=0
@@ -124,6 +201,31 @@ target2.name=Rock
 target16.y=0
 target16.x=0
 dependency9.from=ScrollActor
+=======
+editor.fx.0.y=-8
+editor.fx.0.x=-8
+class.vertical.image=vertical.png
+dependency15.from=ScrollActor
+target15.height=50
+dependency6.to=copilul1
+target2.showInterface=false
+dependency1.from=ScrollWorld
+target5.editor.y=129
+target5.editor.x=1295
+target15.type=AbstractTarget
+mainWindow.y=-8
+target12.naviview.expanded=false
+target5.showInterface=false
+mainWindow.x=-8
+target8.showInterface=false
+dependency5.from=DemoWorld
+class.copilul1.image=copil1-1.png
+class.tree1.superclass=obstacole
+target7.typeParameters=
+target2.name=st
+class.sus.superclass=sageti
+dependency9.from=Lumber
+>>>>>>> 5df0ca77d008f68e2099ee27316967a911d79c63
 readme.name=@README
 target14.width=80
 target14.y=0
@@ -131,20 +233,34 @@ target13.typeParameters=
 target15.width=90
 target14.x=0
 target6.naviview.expanded=false
+<<<<<<< HEAD
 target6.name=copac_3
 target9.height=50
 target6.editor.y=112
 target6.editor.x=1137
 target16.width=110
+=======
+target6.name=dr
+target9.height=50
+target6.editor.y=112
+target6.editor.x=1137
+>>>>>>> 5df0ca77d008f68e2099ee27316967a911d79c63
 class.Lumber.image=lumberjack_spate_idle.png
 target12.y=10
 target5.editor.height=375
 target12.x=70
+<<<<<<< HEAD
 editor.fx.0.width=0
+=======
+dependency10.type=UsesDependency
+class.st.superclass=sageti
+editor.fx.0.width=1382
+>>>>>>> 5df0ca77d008f68e2099ee27316967a911d79c63
 target11.showInterface=false
 target10.y=0
 target8.editor.height=371
 target10.x=0
+<<<<<<< HEAD
 dependency2.to=vertical
 publish.url=
 target14.showInterface=false
@@ -166,6 +282,29 @@ target7.y=0
 target7.x=0
 target2.editor.height=786
 target15.name=DemoWorld
+=======
+dependency2.to=Rock
+target14.showInterface=false
+publish.url=
+target12.width=90
+target11.name=orizontal
+dependency14.type=UsesDependency
+target12.height=50
+target13.width=90
+target10.naviview.expanded=false
+target9.y=0
+target9.x=0
+target6.height=50
+target3.type=ClassTarget
+class.copil.superclass=ScrollActor
+publish.hasSource=true
+target3.editor.width=745
+dependency12.to=sus
+target7.y=0
+target7.x=0
+target2.editor.height=786
+target15.name=ScrollActor
+>>>>>>> 5df0ca77d008f68e2099ee27316967a911d79c63
 target11.typeParameters=
 target5.y=70
 target7.editor.y=104
@@ -173,22 +312,37 @@ target5.x=70
 dependency4.type=UsesDependency
 target7.type=ClassTarget
 target7.editor.x=1066
+<<<<<<< HEAD
 target10.width=80
 target3.y=0
 target3.x=0
 target11.width=80
 dependency7.to=lumber
+=======
+class.jos.image=jos.png
+target10.width=80
+target3.y=250
+target3.x=10
+target11.width=80
+dependency7.to=orizontal
+dependency12.from=Lumber
+>>>>>>> 5df0ca77d008f68e2099ee27316967a911d79c63
 target3.height=50
 dependency8.type=UsesDependency
 target1.y=0
 target4.naviview.expanded=false
 target1.x=0
+<<<<<<< HEAD
+=======
+class.dr.image=dreapta.png
+>>>>>>> 5df0ca77d008f68e2099ee27316967a911d79c63
 publish.shortDesc=
 target12.type=AbstractTarget
 target5.typeParameters=
 class.tree4.superclass=obstacole
 target1.editor.width=748
 <<<<<<<=HEAD
+<<<<<<< HEAD
 dependency2.from=lumber
 target16.type=ClassTarget
 target15.naviview.expanded=false
@@ -215,17 +369,48 @@ target2.naviview.expanded=false
 package.numDependencies=9
 class.Copac_1.superclass=Copaci
 package.numTargets=17
+=======
+dependency2.from=DemoWorld
+target15.naviview.expanded=false
+target8.editor.y=122
+target8.editor.x=1201
+dependency6.from=DemoWorld
+target8.editor.width=512
+project.charset=UTF-8
+target3.showInterface=false
+class.vertical.superclass=ScrollActor
+target3.name=Rock
+target6.showInterface=false
+class.tree4.image=copac_4.png
+target3.typeParameters=
+target9.showInterface=false
+dependency3.to=Lumber
+target7.name=jos
+target9.naviview.expanded=false
+target2.naviview.expanded=false
+class.jos.superclass=sageti
+dependency11.type=UsesDependency
+package.numDependencies=15
+dependency13.to=jos
+package.numTargets=15
+>>>>>>> 5df0ca77d008f68e2099ee27316967a911d79c63
 class.tree1.image=copac_1.png
 target6.editor.width=693
 class.tree2.image=copac_2.png
 >>>>>>>=f2fd92cbeaefb36724746bd8f7e745ce6121f3b5
 target12.name=ScrollWorld
+<<<<<<< HEAD
+=======
+dependency15.type=UsesDependency
+target13.naviview.expanded=false
+>>>>>>> 5df0ca77d008f68e2099ee27316967a911d79c63
 class.tree3.image=copac_3.png
 dependency1.type=UsesDependency
 target4.type=ClassTarget
 target8.width=80
 target12.showInterface=true
 target13.height=50
+<<<<<<< HEAD
 target16.name=Poteca_Verticala
 dependency8.to=copac_3
 target9.width=80
@@ -236,6 +421,17 @@ dependency5.type=UsesDependency
 target8.type=ClassTarget
 class.Poteci.superclass=Obstacles
 class.Poteca_Verticala.superclass=Poteci
+=======
+dependency8.to=vertical
+class.sageti.superclass=ScrollActor
+target9.width=80
+target7.height=50
+target15.showInterface=true
+class.tree2.superclass=obstacole
+dependency5.type=UsesDependency
+target8.type=ClassTarget
+dependency13.from=Lumber
+>>>>>>> 5df0ca77d008f68e2099ee27316967a911d79c63
 dependency9.type=UsesDependency
 target3.editor.height=708
 target7.naviview.expanded=false
@@ -247,14 +443,20 @@ target13.type=ClassTarget
 class.Rock.superclass=ScrollActor
 target7.width=80
 target6.editor.height=790
+<<<<<<< HEAD
 dependency3.from=ScrollWorld
 target1.typeParameters=
 target17.type=AbstractTarget
+=======
+dependency3.from=DemoWorld
+target1.typeParameters=
+>>>>>>> 5df0ca77d008f68e2099ee27316967a911d79c63
 target3.width=80
 class.Lumber.superclass=ScrollActor
 target11.naviview.expanded=false
 target4.width=80
 target8.typeParameters=
+<<<<<<< HEAD
 dependency7.from=DemoWorld
 class.Poteca_Verticala.image=poteca-verticala.png
 target1.editor.y=100
@@ -267,12 +469,31 @@ target4.editor.width=456
 target15.y=0
 target4.name=Copaci
 target15.x=0
+=======
+dependency7.from=Lumber
+target1.editor.y=100
+target1.editor.x=966
+target5.width=90
+dependency4.to=orizontal
+target4.editor.width=456
+target15.y=10
+target4.name=sageti
+target15.x=170
+>>>>>>> 5df0ca77d008f68e2099ee27316967a911d79c63
 readme.y=10
 readme.x=10
 target4.height=50
 readme.height=58
 target12.typeParameters=
+<<<<<<< HEAD
 target1.width=80
 target13.y=0
 =\=\=\=\=\=\=
 target13.x=0
+=======
+target13.y=0
+target1.width=80
+target13.x=0
+=\=\=\=\=\=\=
+dependency14.to=sageti
+>>>>>>> 5df0ca77d008f68e2099ee27316967a911d79c63

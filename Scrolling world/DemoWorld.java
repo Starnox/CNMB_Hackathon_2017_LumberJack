@@ -13,7 +13,7 @@ public class DemoWorld extends ScrollWorld
     private void prepare()
     {
 
-        lumber lumber = new lumber();
+        Lumber lumber = new Lumber();
         addObject(lumber,400,300);
         addObject(new orizontal(),1000,150);
         addObject(new vertical(),200,1000);
