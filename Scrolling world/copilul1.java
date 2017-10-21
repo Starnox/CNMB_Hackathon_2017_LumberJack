@@ -8,12 +8,14 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class copilul1 extends copil
 {
-    /**
-     * Act - do whatever the copilul1 wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
-    public void act() 
+int k;
+        public void act() 
     {
-        // Add your action code here.
+        k++;
+        if(k%30==0)
+        setImage("copil1-2.png");
+        if(k%30==20)
+         setImage("copil1-1.png");
     }    
-}
+    }    
+
