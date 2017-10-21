@@ -34,5 +34,7 @@ public class DemoWorld extends ScrollWorld
         copac_3.setLocation(155,133);
         copac_32.setLocation(60,203);
         copac_3.setLocation(173,133);
+        copilul1 copilul1 = new copilul1();
+        addObject(copilul1,654,417);
     }
 }
