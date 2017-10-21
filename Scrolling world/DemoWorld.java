@@ -5,7 +5,7 @@ public class DemoWorld extends ScrollWorld
 {
     public DemoWorld()
     {
-        super(2000, 2000, 1, 2000, 2000);
+        super(800, 600, 1, 2000, 2000);
 
         prepare();
     }
@@ -13,8 +13,6 @@ public class DemoWorld extends ScrollWorld
     private void prepare()
     {
 
-        Lumber lumber = new Lumber();
-        addObject(lumber,400,300);
         addObject(new orizontal(),1000,150);
         addObject(new vertical(),200,1000);
         addObject(new orizontal(),1000,1850);
