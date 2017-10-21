@@ -254,6 +254,7 @@ public class Lumber extends ScrollActor
         getWorld().moveCamera(-5);
     }
     
+
     int eLangaCopil()
     {
         List Objects=getObjectsInRange(100,copil.class);
@@ -263,4 +264,5 @@ public class Lumber extends ScrollActor
         }
         return 0;
     }
+
 }
