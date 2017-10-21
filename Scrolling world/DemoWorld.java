@@ -15,7 +15,9 @@ public class DemoWorld extends ScrollWorld
 
         Lumber lumber = new Lumber();
         addObject(lumber,400,300);
-        addObject(new orizontal(),0,100);
-        addObject(new vertical(),150,0);
+        addObject(new orizontal(),1000,150);
+        addObject(new vertical(),200,1000);
+        addObject(new orizontal(),1000,1850);
+        addObject(new vertical(),1800,1000);
     }
 }

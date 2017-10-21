@@ -69,7 +69,7 @@ public class Lumber extends ScrollActor
                 anim=4;
             }
         setLocation(getX()-5,getY());
-       if(getX()>=400&&getX()<=1600)
+        if(getOneIntersectingObject(orizontal.class)==null)
         getWorld().moveCamera(-5);
     }
     
@@ -85,9 +85,9 @@ public class Lumber extends ScrollActor
                 setImage("lumberjack_spate_3.png");
                 anim=4;
             }
-         
+        
         setLocation(getX(),getY()+5);
-        if(getY()>=300&&getY()<=1700)
+        if(getOneIntersectingObject(vertical.class)==null)
         getWorld().moveCamera(-5);
     }
     
@@ -105,7 +105,7 @@ public class Lumber extends ScrollActor
             }
         
         setLocation(getX()+5,getY());
-        if(getX()>=400&&getX()<=1600)
+        if(getOneIntersectingObject(orizontal.class)==null)
         getWorld().moveCamera(-5);
     }
     
@@ -122,7 +122,7 @@ public class Lumber extends ScrollActor
                 anim=4;
             }
         setLocation(getX(),getY()-5);
-         if(getX()>=400&&getX()<=1600)
+        if(getOneIntersectingObject(vertical.class)==null)
         getWorld().moveCamera(-5);
     }
 }
