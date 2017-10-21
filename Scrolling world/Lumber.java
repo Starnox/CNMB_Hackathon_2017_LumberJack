@@ -9,6 +9,7 @@ public class Lumber extends ScrollActor
     int timerMini=0;
     int greseli,corecte;
     String cheie;
+    
     public void act() 
     {
         key=Greenfoot.getKey();
@@ -69,7 +70,6 @@ public class Lumber extends ScrollActor
               if(timerMini!=1)
               {
                   sageata_rosu();
-                  remove_sageata();
                   greseli++;
               }
                if(greseli==2)
@@ -77,6 +77,7 @@ public class Lumber extends ScrollActor
                    corecte=0;
                    greseli=0;
                    timerMini=0;
+                   remove_sageata();
                    getWorld().setCameraLocation(400,300);
                    getWorld().addObject(new Lumber(),400,300);
                    getWorld().removeObject(this);
@@ -89,22 +90,22 @@ public class Lumber extends ScrollActor
        if(key.equals("left")||key.equals("right")||key.equals("up")||key.equals("down"))
        if(key.equals(cheie))
        {
-           sageata_verde();
            corecte++;
-           timeriMini=32;
+           timerMini=32;
            if(corecte==4)
            {
                    corecte=0;
                    greseli=0;
                    timerMini=0;
+                   remove_sageata();
                    List Objects=getObjectsInRange(150,copil.class);
                     for(Object obj : Objects)
                     {
                        getWorld().removeObject((Actor)obj);
                     }
-              remove_sageata();
+
             }
-          
+          else 
                add_sageata();
        }
        else
@@ -112,9 +113,9 @@ public class Lumber extends ScrollActor
            greseli++;
            timerMini=32;
            sageata_rosu();
-              remove_sageata();
               if(greseli==2)
                {
+                   remove_sageata();
                    corecte=0;
                    greseli=0;
                    timerMini=0;
@@ -129,12 +130,12 @@ public class Lumber extends ScrollActor
         }
     }
         
-       
    
     void sageata_rosu()
     {
-        List Objects=getObjectsInRange(150,sageti.class);
-                    for(Object obj : Objects)
+        int i=0;
+        List Objects=getObjectsInRange(500,sageti.class);
+                for(Object obj : Objects)
                         {
                             Actor act;
                             act=(Actor)obj;
@@ -146,30 +147,13 @@ public class Lumber extends ScrollActor
                             act.setImage("sus-rosu.png");
                             if(obj instanceof jos)
                             act.setImage("jos-rosu.png");
-                        }
-    }
-    
-    void sageata_verde()
-    {
-        List Objects=getObjectsInRange(150,sageti.class);
-                    for(Object obj : Objects)
-                        {
-                            Actor act;
-                            act=(Actor)obj;
-                            if(obj instanceof st)
-                            act.setImage("stanga-verde.png");
-                            if(obj instanceof dr)
-                            act.setImage("dreapta-verde.png");
-                            if(obj instanceof sus)
-                            act.setImage("sus-verde.png");
-                            if(obj instanceof jos)
-                            act.setImage("jos-verde.png");
+                            i++;
                         }
     }
     
     void remove_sageata()
     {
-        List Objects=getObjectsInRange(150,sageti.class);
+        List Objects=getObjectsInRange(500,sageti.class);
                     for(Object obj : Objects)
                         {
                             getWorld().removeObject((Actor)obj);
@@ -179,25 +163,25 @@ public class Lumber extends ScrollActor
     void add_sageata()
     {
          int x=Greenfoot.getRandomNumber(3);
-         int suma= 50*(greseli+corecte);
+         int suma= 100*(greseli+corecte);
         if(x==1)
                {
-                   getWorld().addObject(new st(),getWorld().getCameraX()+suma-100,getWorld().getCameraY()-50);
+                   getWorld().addObject(new st(),getWorld().getCameraX()+suma-300,getWorld().getCameraY()-50);
                    cheie="left";
                 }
                if(x==2)
                {
-                   getWorld().addObject(new dr(),getWorld().getCameraX()+suma-100,getWorld().getCameraY()-50);
+                   getWorld().addObject(new dr(),getWorld().getCameraX()+suma-300,getWorld().getCameraY()-50);
                  cheie="right";
                 }
                if(x==3)
                {
-                   getWorld().addObject(new sus(),getWorld().getCameraX()+suma-100,getWorld().getCameraY()-50);
+                   getWorld().addObject(new sus(),getWorld().getCameraX()+suma-300,getWorld().getCameraY()-50);
                  cheie="up";
                 }
                if(x==0)
                {
-                   getWorld().addObject(new jos(),getWorld().getCameraX()+suma-100,getWorld().getCameraY()-50);
+                   getWorld().addObject(new jos(),getWorld().getCameraX()+suma-300,getWorld().getCameraY()-50);
                  cheie="down";
                 }
     }
