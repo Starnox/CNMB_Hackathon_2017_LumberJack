@@ -69,7 +69,44 @@ public class Lumber extends ScrollActor
                 anim=4;
             }
         setLocation(getX()-5,getY());
-        if(getOneIntersectingObject(orizontal.class)==null)
+       if(getOneIntersectingObject(orizontal.class)!=null||getOneIntersectingObject(vertical.class)==null)
+        getWorld().moveCamera(-5);
+    }
+    
+    
+    
+     void animate_right()
+    {
+        anim++;
+        if(anim==animCycle)
+            setImage("lumberjack_dreapta_1.png");
+        if(anim==2*animCycle)
+            setImage("lumberjack_dreapta_2.png");
+        if(anim==3*animCycle)
+            {
+                setImage("lumberjack_dreapta_3.png");
+                anim=4;
+            }
+        
+        setLocation(getX()+5,getY());
+        if(getOneIntersectingObject(orizontal.class)!=null||getOneIntersectingObject(vertical.class)==null)
+        getWorld().moveCamera(-5);
+    }
+    
+     void animate_up()
+    {
+        anim++;
+        if(anim==animCycle)
+            setImage("lumberjack_fata_1.png");
+        if(anim==2*animCycle)
+            setImage("lumberjack_fata_2.png");
+        if(anim==3*animCycle)
+            {
+                setImage("lumberjack_fata_3.png");
+                anim=4;
+            }
+        setLocation(getX(),getY()-5);
+        if(getOneIntersectingObject(vertical.class)!=null||getOneIntersectingObject(orizontal.class)==null)
         getWorld().moveCamera(-5);
     }
     
@@ -87,42 +124,7 @@ public class Lumber extends ScrollActor
             }
         
         setLocation(getX(),getY()+5);
-        if(getOneIntersectingObject(vertical.class)==null)
-        getWorld().moveCamera(-5);
-    }
-    
-     void animate_right()
-    {
-        anim++;
-        if(anim==animCycle)
-            setImage("lumberjack_dreapta_1.png");
-        if(anim==2*animCycle)
-            setImage("lumberjack_dreapta_2.png");
-        if(anim==3*animCycle)
-            {
-                setImage("lumberjack_dreapta_3.png");
-                anim=4;
-            }
-        
-        setLocation(getX()+5,getY());
-        if(getOneIntersectingObject(orizontal.class)==null)
-        getWorld().moveCamera(-5);
-    }
-    
-     void animate_up()
-    {
-        anim++;
-        if(anim==animCycle)
-            setImage("lumberjack_fata_1.png");
-        if(anim==2*animCycle)
-            setImage("lumberjack_fata_2.png");
-        if(anim==3*animCycle)
-            {
-                setImage("lumberjack_fata_3.png");
-                anim=4;
-            }
-        setLocation(getX(),getY()-5);
-        if(getOneIntersectingObject(vertical.class)==null)
+         if(getOneIntersectingObject(vertical.class)!=null||getOneIntersectingObject(orizontal.class)==null)
         getWorld().moveCamera(-5);
     }
 }
