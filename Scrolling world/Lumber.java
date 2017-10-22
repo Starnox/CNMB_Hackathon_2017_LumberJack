@@ -4,9 +4,7 @@ public class Lumber extends ScrollActor
 {
     private String key;
     private String cheie;
-    
     public static int timer;
-    
     private int anim=4;
     private int animCycle=7;
     private int lastKey;
@@ -14,44 +12,41 @@ public class Lumber extends ScrollActor
     private int greseli,corecte;
     private int spawn=0;
     private int time = 1500;
-    
     private boolean galeataPressed = false;
     private boolean firePressed = false;
     private boolean canPressBucket = true;
-<<<<<<< HEAD
+    int night=0;
+    Mesaj msg;
+    GreenfootSound  back = new GreenfootSound("Background.mp3");
+    GreenfootSound  pasi = new GreenfootSound("Pasi.mp3");
     
-    
-    
-    
-=======
     arrow sageata= new arrow();
     public static int y1=750,y2=750;
->>>>>>> 3bf68bf43b3a90ebd7146b1ef7698a4e12efb8ba
     public void act() 
     {
-
-     
+        pasi.setVolume(50);
+        back.setVolume(25);
+         back.playLoop();
+        countTimeFire();
         key=Greenfoot.getKey();
         keys();
         checkMouse();
         timer++;
-        if(spawn==0&&timer%500==0)
-        {
-        int y=Greenfoot.getRandomNumber(2);
-        if(y==0)
-        copii();
-
-        //else foc();
-        }
+        if(timer==1)
+            foc();
+            if(night==0)
+         noapte();
     }
     
     void keys()
     {
+
         if(eLangaCopil()==0)
         {
         if(Greenfoot.isKeyDown("a"))
         {
            getWorld().setCameraDirection(0);
+           
             animate_left();
             lastKey=4;
         }
@@ -59,6 +54,7 @@ public class Lumber extends ScrollActor
         if(Greenfoot.isKeyDown("s"))
         {
            getWorld().setCameraDirection(270);
+           
             animate_down();
             lastKey=3;
         }
@@ -66,6 +62,7 @@ public class Lumber extends ScrollActor
         if(Greenfoot.isKeyDown("d"))
         {
             getWorld().setCameraDirection(180);
+            
             animate_right();
             lastKey=3;
         }
@@ -73,6 +70,7 @@ public class Lumber extends ScrollActor
         if(Greenfoot.isKeyDown("w"))
         {
            getWorld().setCameraDirection(90);
+           
             animate_up();
             lastKey=3;
         }
@@ -87,6 +85,7 @@ public class Lumber extends ScrollActor
         }
         else 
         {
+            pasi.stop();
             anim=4;
             if(lastKey==4)
                 setImage("lumberjack_stanga_idle.png");
@@ -97,10 +96,7 @@ public class Lumber extends ScrollActor
             if(lastKey==1)
                 setImage("lumberjack_fata_idle.png");
         }
-        
-            
-                    
-          
+
         }
         
        }
@@ -123,8 +119,8 @@ public class Lumber extends ScrollActor
                    timerMini=0;
                    remove_sageata();
                    getWorld().setCameraLocation(400,350);
-                   getWorld().addObject(new Lumber(),400,350);
-                   getWorld().removeObject(this);
+                   setLocation(400,350);
+                   time=1500;
                    return;
                 }
                add_sageata();
@@ -147,6 +143,8 @@ public class Lumber extends ScrollActor
                     {
                        getWorld().removeObject((Actor)obj);
                     }
+                    time=1500;
+                    foc();
                     spawn=0;
 
             }
@@ -165,8 +163,8 @@ public class Lumber extends ScrollActor
                    greseli=0;
                    timerMini=0;
                    getWorld().setCameraLocation(400,350);
-                   getWorld().addObject(new Lumber(),400,350);
-                   getWorld().removeObject(this);
+                   setLocation(400,350);
+                   time=1500;
                    return;
                 }
                 else
@@ -233,6 +231,7 @@ public class Lumber extends ScrollActor
     
     void animate_left()
     {
+        pasi.play();
         anim++;
         if(anim==animCycle)
             setImage("lumberjack_stanga_1.png");
@@ -255,6 +254,7 @@ public class Lumber extends ScrollActor
     
      void animate_right()
     {
+        pasi.play();
         anim++;
         if(anim==animCycle)
             setImage("lumberjack_dreapta_1.png");
@@ -275,6 +275,7 @@ public class Lumber extends ScrollActor
     
      void animate_up()
     {
+        pasi.play();
         anim++;
         if(anim==animCycle)
             setImage("lumberjack_fata_1.png");
@@ -295,6 +296,7 @@ public class Lumber extends ScrollActor
     
     void animate_down()
     {
+        pasi.play();
         anim++;
         if(anim==animCycle)
             setImage("lumberjack_spate_1.png");
@@ -355,6 +357,8 @@ public class Lumber extends ScrollActor
             }
             if(galeataPressed && firePressed && actor instanceof Fire)
             {
+                time=1500;
+                copii();
                 getWorld().removeObject(actor);
                 spawn = 0;
                 galeataPressed = false;
@@ -371,8 +375,8 @@ public class Lumber extends ScrollActor
         {
            y1=100;
            y2=300;
-            getWorld().addObject(new copilul1(),98,320);
-            getWorld().addObject(new copilul2(),145,292);
+            getWorld().addObject(new copilul1(),150,320);
+            getWorld().addObject(new copilul2(),145,272);
             getWorld().addObject(new copilul3(),184,316);
         }
         if(x==1)
@@ -387,79 +391,60 @@ public class Lumber extends ScrollActor
         {
              y1=100;
            y2=300;
-            getWorld().addObject(new copilul1(),98,320);
-            getWorld().addObject(new copilul2(),145,292);
-            getWorld().addObject(new copilul3(),184,316);
+            getWorld().addObject(new copilul1(),1081,297);
+            getWorld().addObject(new copilul2(),1147,271);
+            getWorld().addObject(new copilul3(),1135,316);
+
         }
         if(x==4)
         {
              y1=100;
            y2=300;
-            getWorld().addObject(new copilul1(),98,320);
-            getWorld().addObject(new copilul2(),145,292);
-            getWorld().addObject(new copilul3(),184,316);
+            getWorld().addObject(new copilul1(),344,1228);
+            getWorld().addObject(new copilul2(),382,1226);
+            getWorld().addObject(new copilul3(),337,1224);
+
         }
         spawn=1;
     }
     void foc()
     {
-<<<<<<< HEAD
-            int x=Greenfoot.getRandomNumber(4);
-            if(x==0)
-                getWorld().addObject(new Fire(),484,88);
-            if(x==1)
-                getWorld().addObject(new Fire(),693,258);
-            if(x==2)
-                getWorld().addObject(new Fire(),449,554);
-            if(x==3)
-                getWorld().addObject(new Fire(),101,282);
-            if(x==4)
-                getWorld().addObject(new Fire(),464,527);
-            countTimeFire();
-=======
+           
          int x=Greenfoot.getRandomNumber(4);
         if(x==0)
             {
-                y1=1;
-                y2=1;
-                getWorld().addObject(new Fire(),98,320);
+                y1=484;
+                y2=88;
+                getWorld().addObject(new Fire(),484,88);
             }
         if(x==1)
         {
-                y1=1;
-                y2=1;
+                y1=693;
+                y2=258;
             
-        getWorld().addObject(new Fire(),811,851);
+         getWorld().addObject(new Fire(),693,258);
     }
         if(x==2)
         {
-                y1=1;
-                y2=1;
+                y1=449;
+                y2=554;
             
-            getWorld().addObject(new Fire(),98,320);
+            getWorld().addObject(new Fire(),449,554);
         }
         if(x==3)
         {
-                y1=1;
-                y2=1;
+                y1=101;
+                y2=282;
             
-            getWorld().addObject(new Fire(),98,320);
+             getWorld().addObject(new Fire(),101,282);
         }
             if(x==4)
             {
-                y1=1;
-                y2=1;
+                y1=464;
+                y2=527;
             
-            getWorld().addObject(new Fire(),98,320);
+            getWorld().addObject(new Fire(),464,527);
         }
-            if(x==5)
-            {
-                y1=1;
-                y2=1;
-            getWorld().addObject(new Fire(),98,320);
-        }
->>>>>>> 3bf68bf43b3a90ebd7146b1ef7698a4e12efb8ba
-            
         spawn=1;
     }
     
@@ -467,18 +452,33 @@ public class Lumber extends ScrollActor
     {
         time--;
         showTime();
+        showTime2();
         if(time / 55 <= 0)
         {
-            getWorld().setCameraLocation(400,350);
-                   getWorld().addObject(new Lumber(),400,350);
-                   getWorld().removeObject(this);
+            time=1500;
+            getWorld().setCameraLocation(400,300);
+                   setLocation(400,350);
                    return;
         }
     }
     
+    void showTime2()
+    {
+        getWorld().showText("Ora: "+timer/3600+":" + timer/60 + ":" +timer%60,700,100);
+    }
+    
     void showTime()
     {
-        getWorld().showText("Time: " + time/55, 100, 100);
+           getWorld().showText("Time: "+time/55 ,100,100);
+    }
+    void noapte()
+    {
+        if(timer/3600==1)
+        
+        {
+        getWorld().addObject(new umbra(),400,300);
+        night=1;
+    }
     }
 }
 

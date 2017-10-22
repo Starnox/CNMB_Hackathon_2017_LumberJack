@@ -1,4 +1,4 @@
 1.Greenfoot scroll world script de Sven van Nigtevecht
-2.Sprite-uri RPG Maker de pe forum.rpgmakernet.com
+2.Sprite-uri din RPG Maker de pe forum.rpgmakernet.com/Minecraft/Legend of Zelda
 3.Sprite Lumberjack de Alexander Shen
 4.Muzica de la DLSounds

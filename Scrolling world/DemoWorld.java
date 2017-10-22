@@ -784,9 +784,48 @@ public class DemoWorld extends ScrollWorld
         lum.y1=750;
         lum.y2=750;
         poteca_orizontala21.setLocation(642,1440);
-            
+
         Galeata galeata = new Galeata();
-        addObject(galeata,299,574);
-        galeata.setLocation(299,556);
+        addObject(galeata,400,554);
+        copac_412.setLocation(1259,85);
+        copac_48.setLocation(1179,170);
+        copac_111.setLocation(1138,92);
+        copac_310.setLocation(1082,179);
+        copac_29.setLocation(1044,184);
+        copac_111.setLocation(1136,49);
+        copac_29.setLocation(1022,210);
+        copac_310.setLocation(1061,99);
+        copac_111.setLocation(1063,109);
+        copac_310.setLocation(1143,178);
+        copac_111.setLocation(1084,198);
+        copac_310.setLocation(1105,87);
+        copac_29.setLocation(1022,190);
+        copac_111.setLocation(1104,157);
+        copac_29.setLocation(1030,191);
+        copac_412.setLocation(1256,80);
+        copac_48.setLocation(1139,147);
+        copac_314.setLocation(1206,151);
+        copac_48.setLocation(1179,74);
+        copac_314.setLocation(1182,138);
+        copilul1 copilul1 = new copilul1();
+        addObject(copilul1,1081,297);
+        copilul3 copilul3 = new copilul3();
+        addObject(copilul3,1147,271);
+        copilul2 copilul2 = new copilul2();
+        addObject(copilul2,1135,316);
+        copilul1.setLocation(1061,291);
+        copilul2.setLocation(1112,312);
+        removeObject(copilul2);
+        copilul3.setLocation(1146,271);
+        removeObject(copilul1);
+        removeObject(copilul3);
+        copac_331.setLocation(224,1024);
+        copac_330.setLocation(238,947);
+        copac_331.setLocation(247,1025);
+        removeObject(copac_242);
+        removeObject(copac_439);
+        copac_243.setLocation(457,1213);
+        copac_440.setLocation(275,1299);
+        
     }
 }
