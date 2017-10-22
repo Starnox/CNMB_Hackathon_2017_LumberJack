@@ -34,8 +34,9 @@ public class Lumber extends ScrollActor
         timer++;
         if(timer==1)
             foc();
-            if(night==0)
+        if(night==0)
          noapte();
+        umb.setLocation(getX(),getY());
     }
     
     void keys()
@@ -473,10 +474,10 @@ public class Lumber extends ScrollActor
     }
     void noapte()
     {
-        if(timer/3600==1)
+        if(timer/3600==0)
         
         {
-        getWorld().addObject(umb,400,300);
+        getWorld().addObject(umb,getX(),getY());
         night=1;
     }
     }

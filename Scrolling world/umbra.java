@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class umbra extends Actor
+public class umbra extends ScrollActor
 {
     /**
      * Act - do whatever the umbra wants to do. This method is called whenever
