@@ -19,7 +19,7 @@ public class Lumber extends ScrollActor
     Mesaj msg;
     GreenfootSound  back = new GreenfootSound("Background.mp3");
     GreenfootSound  pasi = new GreenfootSound("Pasi.mp3");
-    
+    umbra umb= new umbra();
     arrow sageata= new arrow();
     public static int y1=750,y2=750;
     public void act() 
@@ -370,7 +370,7 @@ public class Lumber extends ScrollActor
       }
     void copii()
     {
-        int x=Greenfoot.getRandomNumber(4);
+        int x=Greenfoot.getRandomNumber(3);
         if(x==0)
         {
            y1=100;
@@ -387,7 +387,7 @@ public class Lumber extends ScrollActor
         getWorld().addObject(new copilul2(),920,852);
         getWorld().addObject(new copilul3(),871,851);
         }
-        if(x==3)
+        if(x==2)
         {
              y1=100;
            y2=300;
@@ -396,7 +396,7 @@ public class Lumber extends ScrollActor
             getWorld().addObject(new copilul3(),1135,316);
 
         }
-        if(x==4)
+        if(x==3)
         {
              y1=100;
            y2=300;
@@ -476,7 +476,7 @@ public class Lumber extends ScrollActor
         if(timer/3600==1)
         
         {
-        getWorld().addObject(new umbra(),400,300);
+        getWorld().addObject(umb,400,300);
         night=1;
     }
     }
